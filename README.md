@@ -5,5 +5,5 @@
 ##使用的第三方库
 >1. YYModel        -   一个高性能的JSON-Model转换工具库. 
 >2. AFNetworking   -   优秀的第三方网络处理库. 
->3. hpple          -   nice，html/xml解析库. 
+>3. hpple          -   比较好的html/xml解析库. 
 >4. SDWebImage     -   图片异步处理库. 
