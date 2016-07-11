@@ -49,6 +49,12 @@ CGFloat const kLogoImageMargin = 2;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LLGlobalConfig *c = [LLGlobalConfig copy];
+    LLGlobalConfig *c4 = [LLGlobalConfig mutableCopy];
+    LLGlobalConfig *c2 = [LLGlobalConfig new];
+    LLGlobalConfig *c3 = [LLGlobalConfig defaultConfig];
+    NSLog(@"%p -- %p -- %p - %p", c, c2, c3, c4);
+    return;
     [self.homeCollectionView registerNib:[UINib nibWithNibName:@"LLHomeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"LLHomeCollectionViewCellReusedIdentifier"];
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;

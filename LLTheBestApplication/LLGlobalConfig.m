@@ -35,22 +35,6 @@ static id _sharedObj = nil;
     return _sharedObj;
 }
 
-- (id)copyWithZone:(NSZone *)zone{
-    return _sharedObj;
-}
-
-- (id)mutableCopyWithZone:(NSZone *)zone{
-    return _sharedObj;
-}
-
-+ (id)copyWithZone:(struct _NSZone *)zone{
-    return _sharedObj;
-}
-
-+ (id)mutableCopyWithZone:(struct _NSZone *)zone{
-    return _sharedObj;
-}
-
 - (NSString *)homeUrlString{
     return [self.domain stringByAppendingString:@"api/apps/app/daily"];
 }
