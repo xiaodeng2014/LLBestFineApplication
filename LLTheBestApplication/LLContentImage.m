@@ -14,7 +14,7 @@
     if (self = [super init]) {
         self.width = width;
         self.height = height;
-        self.imageUrl = [imageUrl componentsSeparatedByString:@"?"][0];
+        self.imageUrl = [imageUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         _realWidth = LLScreenW - marginLeft * 2;
         if (self.width >= 0.1) {
             _realHeight = self.height * _realWidth / self.width;

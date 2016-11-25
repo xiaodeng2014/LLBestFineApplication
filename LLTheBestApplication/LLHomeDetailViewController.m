@@ -23,7 +23,8 @@ CGFloat const LLMarginLeftAndRight = 8;
 CGFloat const LLContentMarginY = 15.0;
 @interface LLHomeDetailViewController()
 <
-    UIScrollViewDelegate
+    UIScrollViewDelegate,
+    CAAnimationDelegate
 >
 
 @property (nonatomic, strong) UIImageView *topImageView;

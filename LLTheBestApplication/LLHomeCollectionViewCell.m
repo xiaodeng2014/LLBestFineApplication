@@ -26,6 +26,7 @@ NSString * const LLHomeCollectionViewCellReusedIdentifier = @"HomeReusedIdentifi
 @implementation LLHomeCollectionViewCell
 
 - (void)awakeFromNib{
+    [super awakeFromNib];
     self.digestLabel.preferredMaxLayoutWidth = LLScreenW - 20;
     self.mainContainView.layer.cornerRadius = 6;
 }
